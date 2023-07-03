@@ -12,7 +12,7 @@ export type InitializeOptions =
 export type MswParameters = {
   msw?:
     | RequestHandler[]
-    | { handlers: RequestHandler[] | Record<string, RequestHandler> }
+    | { handlers: RequestHandler[] | Record<string, RequestHandler[]> }
 }
 
 type Context = {
